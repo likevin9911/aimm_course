@@ -8,7 +8,6 @@ This repository is the home to the source code and software documentation for th
 
 ## Getting Started
 
- * The [VRX Wiki](https://github.com/osrf/vrx/wiki) provides documentation and tutorials.
  * The instructions assume a basic familiarity with the ROS1 Noetic environment and Gazebo 11.  If these tools are new to you, we recommend starting with the excellent [ROS Tutorials](http://wiki.ros.org/ROS/Tutorials)
  * For technical problems, please use the send us an email to describe your problem or request support.
 
