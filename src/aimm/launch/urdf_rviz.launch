@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Load URDF and publish static transform -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+  <!-- Launch RViz with configuration -->
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find aimm)/rviz_config/my_robot.rviz" />
+</launch>
+

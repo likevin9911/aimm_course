@@ -1,0 +1,8 @@
+prefix=/home/nope/aimm_ws/install
+
+Name: aimm
+Description: Description of aimm
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- Includes all macros in this package so they don't need to be included individualy -->
+<robot xmlns:xacro="http://ros.org/wiki/xacro"
+       name="AIMM-4">
+  <!-- Include dynamics macros -->
+  <xacro:include filename="$(find aimm_gazebo)/urdf/dynamics/aimm4_gazebo_dynamics_plugin.xacro" />
+
+  <!-- Include sensor macros -->
+  <xacro:include filename="$(find aimm_gazebo)/urdf/components/aimm4_camera.xacro" />
+  <xacro:include filename="$(find aimm_gazebo)/urdf/components/aimm4_gps.xacro" />
+  <xacro:include filename="$(find aimm_gazebo)/urdf/components/aimm4_imu.xacro" />
+  <xacro:include filename="$(find aimm_gazebo)/urdf/components/aimm4_planar_lidar.xacro" />
+  <xacro:include filename="$(find aimm_gazebo)/urdf/components/aimm4_3d_lidar.xacro" />
+  <xacro:include filename="$(find aimm_gazebo)/urdf/components/lidar.xacro" />
+  <xacro:include filename="$(find aimm_gazebo)/urdf/components/aimm4_p3d.xacro" />
+  <xacro:include filename="$(find aimm_gazebo)/urdf/components/aimm4_pinger.xacro" />
+
+  <!-- Include ball shooter macros -->
+  <xacro:include filename="$(find aimm_gazebo)/urdf/components/ball_shooter.xacro" />
+</robot>

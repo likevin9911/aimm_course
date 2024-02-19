@@ -1,0 +1,8 @@
+prefix=/home/nope/aimm_ws/install
+
+Name: vorc_gazebo
+Description: Description of vorc_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: gazebo_dev vrx_gazebo wamv_gazebo wave_gazebo xacro
