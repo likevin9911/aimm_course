@@ -1,2 +1,2 @@
-aimm:vrx/cora_description:vrx/usv_gazebo_plugins:vrx/usv_msgs:vrx/vorc_gazebo:vrx/vrx_2019:vrx/vrx_gazebo:vrx/wamv_description:vrx/wamv_gazebo:vrx/wave_gazebo:vrx/wave_gazebo_plugins
+aimm:aimm_gazebo:lpv_description:lpv_gazebo:usv_gazebo_plugins:wave_gazebo:wave_gazebo_plugins
 -DCATKIN_DEVEL_PREFIX=/home/nope/aimm_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nope/aimm_ws/install -G Unix Makefiles

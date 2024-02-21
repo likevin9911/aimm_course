@@ -66,22 +66,22 @@ vrx/wamv_gazebo/CMakeFiles/wamv_gazebo__xacro_auto_generate_to_devel_space_: /ho
 	cd /home/nope/aimm_ws/build/vrx/wamv_gazebo && /usr/bin/cmake -E make_directory /home/nope/aimm_ws/devel/share/wamv_gazebo/urdf
 
 vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/wamv_gazebo.urdf.xacro
-vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/dynamics/wamv_gazebo_dynamics_plugin.xacro
-vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_description/urdf/battery.xacro
-vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/wamv_p3d.xacro
-vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/wamv_camera.xacro
+vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_description/urdf/thrusters/engine.xacro
+vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/wamv_pinger.xacro
 vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/wamv_planar_lidar.xacro
-vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/wamv_gps.xacro
-vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/lidar.xacro
+vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/thruster_layouts/wamv_gazebo_thruster_config.xacro
+vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/macros.xacro
+vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/wamv_camera.xacro
 vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/thruster_layouts/wamv_aft_thrusters.xacro
 vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/wamv_gazebo.xacro
-vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_description/urdf/thrusters/engine.xacro
-vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_description/urdf/wamv_base.urdf.xacro
-vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/macros.xacro
-vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/wamv_pinger.xacro
-vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/thruster_layouts/wamv_gazebo_thruster_config.xacro
-vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/wamv_3d_lidar.xacro
+vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/dynamics/wamv_gazebo_dynamics_plugin.xacro
 vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/wamv_imu.xacro
+vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/wamv_3d_lidar.xacro
+vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/wamv_gps.xacro
+vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/lidar.xacro
+vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/wamv_p3d.xacro
+vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_description/urdf/wamv_base.urdf.xacro
+vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_description/urdf/battery.xacro
 vrx/wamv_gazebo/urdf/wamv_gazebo.urdf: /home/nope/aimm_ws/src/vrx/wamv_gazebo/urdf/components/ball_shooter.xacro
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nope/aimm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "xacro: generating urdf/wamv_gazebo.urdf from urdf/wamv_gazebo.urdf.xacro"
 	cd /home/nope/aimm_ws/src/vrx/wamv_gazebo && /home/nope/aimm_ws/build/catkin_generated/env_cached.sh xacro -o /home/nope/aimm_ws/build/vrx/wamv_gazebo/urdf/wamv_gazebo.urdf urdf/wamv_gazebo.urdf.xacro

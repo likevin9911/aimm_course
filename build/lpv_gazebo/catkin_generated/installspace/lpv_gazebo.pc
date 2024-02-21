@@ -1,0 +1,8 @@
+prefix=/home/nope/aimm_ws/install
+
+Name: lpv_gazebo
+Description: Description of lpv_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -66,9 +66,9 @@ vrx/vorc_gazebo/CMakeFiles/vorc_gazebo__xacro_auto_generate_to_devel_space_: /ho
 	cd /home/nope/aimm_ws/build/vrx/vorc_gazebo && /usr/bin/cmake -E make_directory /home/nope/aimm_ws/devel/share/vorc_gazebo/worlds
 
 vrx/vorc_gazebo/worlds/marina.world: /home/nope/aimm_ws/src/vrx/vorc_gazebo/worlds/marina.world.xacro
-vrx/vorc_gazebo/worlds/marina.world: /home/nope/aimm_ws/src/vrx/vrx_gazebo/worlds/xacros/usv_wind_plugin.xacro
 vrx/vorc_gazebo/worlds/marina.world: /home/nope/aimm_ws/src/vrx/vorc_gazebo/worlds/marina.xacro
 vrx/vorc_gazebo/worlds/marina.world: /home/nope/aimm_ws/src/vrx/wave_gazebo/world_models/ocean_waves/model.xacro
+vrx/vorc_gazebo/worlds/marina.world: /home/nope/aimm_ws/src/vrx/vrx_gazebo/worlds/xacros/usv_wind_plugin.xacro
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/nope/aimm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "xacro: generating worlds/marina.world from worlds/marina.world.xacro"
 	cd /home/nope/aimm_ws/src/vrx/vorc_gazebo && /home/nope/aimm_ws/build/catkin_generated/env_cached.sh xacro -o /home/nope/aimm_ws/build/vrx/vorc_gazebo/worlds/marina.world worlds/marina.world.xacro
 
