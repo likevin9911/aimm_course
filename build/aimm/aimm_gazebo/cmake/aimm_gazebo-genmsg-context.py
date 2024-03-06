@@ -1,0 +1,11 @@
+# generated from genmsg/cmake/pkg-genmsg.context.in
+
+messages_str = "/home/nope/aimm_ws/src/aimm/aimm_gazebo/msg/Task.msg;/home/nope/aimm_ws/src/aimm/aimm_gazebo/msg/Contact.msg"
+services_str = "/home/nope/aimm_ws/src/aimm/aimm_gazebo/srv/ColorSequence.srv;/home/nope/aimm_ws/src/aimm/aimm_gazebo/srv/BallShooter.srv"
+pkg_name = "aimm_gazebo"
+dependencies_str = "std_msgs"
+langs = "gencpp;geneus;genlisp;gennodejs;genpy"
+dep_include_paths_str = "aimm_gazebo;/home/nope/aimm_ws/src/aimm/aimm_gazebo/msg;std_msgs;/opt/ros/noetic/share/std_msgs/cmake/../msg"
+PYTHON_EXECUTABLE = "/usr/bin/python3"
+package_has_static_sources = 'TRUE' == 'TRUE'
+genmsg_check_deps_script = "/opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

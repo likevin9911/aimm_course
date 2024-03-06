@@ -1,0 +1,7 @@
+set(aimm_gazebo_SETUP_PY_SETUP_MODULE "distutils.core")
+set(aimm_gazebo_SETUP_PY_VERSION "1.3.0")
+set(aimm_gazebo_SETUP_PY_SCRIPTS "")
+set(aimm_gazebo_SETUP_PY_PACKAGES "aimm_gazebo")
+set(aimm_gazebo_SETUP_PY_PACKAGE_DIRS "src/aimm_gazebo")
+set(aimm_gazebo_SETUP_PY_MODULES "")
+set(aimm_gazebo_SETUP_PY_MODULE_DIRS "")

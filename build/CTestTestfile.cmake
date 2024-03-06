@@ -5,10 +5,10 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("aimm")
-subdirs("lpv_description")
-subdirs("lpv_gazebo")
-subdirs("wave_gazebo")
-subdirs("aimm_gazebo")
-subdirs("usv_gazebo_plugins")
-subdirs("wave_gazebo_plugins")
+subdirs("aimm/lpv_description")
+subdirs("aimm/lpv_gazebo")
+subdirs("aimm/usv_msgs")
+subdirs("aimm/wave_gazebo_plugins")
+subdirs("aimm/usv_gazebo_plugins")
+subdirs("aimm/wave_gazebo")
+subdirs("aimm/aimm_gazebo")
