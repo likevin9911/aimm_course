@@ -1,8 +1,0 @@
-prefix=/home/nope/aimm_ws/install
-
-Name: aimm_gazebo
-Description: Description of aimm_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

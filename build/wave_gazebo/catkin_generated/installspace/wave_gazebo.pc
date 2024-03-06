@@ -1,8 +1,0 @@
-prefix=/home/nope/aimm_ws/install
-
-Name: wave_gazebo
-Description: Description of wave_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

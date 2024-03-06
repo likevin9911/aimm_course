@@ -1,2 +1,0 @@
-aimm/aimm_gazebo:aimm/lpv_description:aimm/lpv_gazebo:aimm/usv_gazebo_plugins:aimm/usv_msgs:aimm/wave_gazebo:aimm/wave_gazebo_plugins
--DCATKIN_DEVEL_PREFIX=/home/nope/aimm_ws/devel -DCMAKE_INSTALL_PREFIX=/home/nope/aimm_ws/install -G Unix Makefiles
