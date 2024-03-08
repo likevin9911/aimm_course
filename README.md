@@ -11,9 +11,17 @@ This repository is the home to the source code and software documentation for th
  * The instructions assume a basic familiarity with the ROS1 Noetic environment and Gazebo 11.  If these tools are new to you, we recommend starting with the excellent [ROS Tutorials](http://wiki.ros.org/ROS/Tutorials)
  * For technical problems, please use the send us an email to describe your problem or request support.
 
-The following script opens the AIMM boat (package 4) in open gazebo. 
+The following command opens the AIMM boat in open gazebo. 
 ```bash
-roslaunch aimm simulate_boat.launch
+roslaunch aimm_gazebo aimm.launch
+```
+The following command opens the AIMM boat in open in RVIZ. 
+```bash
+roslaunch lpv_gazebo rviz_aimm.launch
+```
+The following command opens the AIMM boat usv_keydrive. 
+```bash
+roslaunch aimm_gazebo usv_keydrive.launch
 ```
 
 ## Contributing
