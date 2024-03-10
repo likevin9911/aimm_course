@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!-- Includes all macros in this package so they don't need to be included individualy -->
+<robot xmlns:xacro="http://ros.org/wiki/xacro"
+       name="lpv-4">
+  <!-- Include dynamics macros -->
+  <xacro:include filename="$(find lpv_gazebo)/urdf/dynamics/lpv_gazebo_dynamics_plugin.xacro" />
+
+  <!-- Include sensor macros -->
+  <xacro:include filename="$(find lpv_gazebo)/urdf/components/lpv_camera.xacro" />
+  <xacro:include filename="$(find lpv_gazebo)/urdf/components/lpv_gps.xacro" />
+  <xacro:include filename="$(find lpv_gazebo)/urdf/components/lpv_radar.xacro" />
+  <xacro:include filename="$(find lpv_gazebo)/urdf/components/lpv_imu.xacro" />
+  <xacro:include filename="$(find lpv_gazebo)/urdf/components/lpv_planar_lidar.xacro" />
+  <xacro:include filename="$(find lpv_gazebo)/urdf/components/lpv_3d_lidar.xacro" />
+  <xacro:include filename="$(find lpv_gazebo)/urdf/components/lidar.xacro" />
+  <xacro:include filename="$(find lpv_gazebo)/urdf/components/lpv_p3d.xacro" />
+  <xacro:include filename="$(find lpv_gazebo)/urdf/components/lpv_pinger.xacro" />
+
+  <!-- Include ball shooter macros -->
+  <xacro:include filename="$(find lpv_gazebo)/urdf/components/ball_shooter.xacro" />
+</robot>

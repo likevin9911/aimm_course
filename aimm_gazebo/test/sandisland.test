@@ -1,0 +1,6 @@
+<launch>
+  <include file="$(find aimm_2019)/launch/sandisland.launch">
+    <arg name="gui" value="false" />
+  </include>
+  <test test-name="sandisland_test" pkg="aimm_gazebo" type="sandisland_test" />
+</launch>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+
+<!-- Generate lpv given custom configurations. Used by aimm-docker for
+     competition evaluation -->
+
+<launch>
+  <arg name="namespace" value="lpv_config"/>
+
+  <group ns="$(arg namespace)">
+	  
+    <arg name="lpv_locked" default="false"/>
+    <param name="lpv_locked" value="$(arg lpv_locked)"/>
+
+    <arg name="component_yaml" default="$(find aimm_gazebo)/config/lpv_config/example_component_config.yaml"/>
+    <param name="component_yaml" value="$(arg component_yaml)"/>
+
+    <arg name="thruster_yaml" default="$(find aimm_gazebo)/config/lpv_config/example_thruster_config.yaml"/>
+    <param name="thruster_yaml" value="$(arg thruster_yaml)"/>
+
+    <arg name="lpv_target"/>
+    <param name="lpv_target" value="$(arg lpv_target)"/>
+
+    <param name="lpv_gazebo" value="$(find lpv_gazebo)/urdf/lpv_gazebo.urdf.xacro"/>
+
+    <param name="components_dir" value="$(find lpv_gazebo)/urdf/components"/>
+    
+    <param name="thrusters_dir" value="$(find lpv_description)/urdf/thrusters"/>
+
+    <node name="lpv_generator" pkg="aimm_gazebo" type="generate_lpv.py" output="screen" required="true"/>
+  </group>
+</launch>

@@ -1,0 +1,68 @@
+lpv_camera: 
+    num: 3
+    allowed_params:
+        name
+        x
+        y
+        z
+        R
+        P
+        Y
+        post_Y
+        visualize
+
+lpv_gps:
+    num: 1
+    allowed_params:
+        name
+        x
+        y
+        z
+        R
+        P
+        Y
+
+lpv_imu:
+    num: 1
+    allowed_params:
+        name
+        x
+        y
+        z
+        R
+        P
+        Y
+
+lidar:
+    num: 2
+    allowed_params:
+        name
+        type    
+        x
+        y
+        z
+        R
+        P
+        Y
+        post_Y
+
+lpv_ball_shooter:
+    num: 1
+    allowed_params:
+        name
+        x
+        y
+        z
+        pitch
+        yaw
+
+lpv_pinger:
+    num: 1
+    allowed_params:
+        name
+        position
+
+lpv_p3d:
+    num: 0
+    allowed_params:
+        name

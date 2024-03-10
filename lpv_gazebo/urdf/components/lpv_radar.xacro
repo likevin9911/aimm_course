@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="lpv_radar" params="name:=radar x:=0.6 y:=0 z:=0.95
+				       R:=0 P:=0 Y:=pi update_rate:=10">
+				       
+				       <!-- Links-->
+    <link name="${namespace}/${name}_link">
+      
+      <visual name="${name}_visual">
+        <geometry>
+          <mesh filename="package://ainstein_radar_gazebo_plugins/models/radar_sensor/meshes/kanza79.stl"/>
+        </geometry>
+      </visual>
+      
+       <collision name="${name}_collision_base">
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+          <box size="0.01 0.05 0.05" />
+        </geometry>
+       </collision>
+      
+      <inertial>
+        <mass value="1"/>
+      <inertia ixx="0.001" ixy="0.0" ixz="0.0"
+		 iyy="0.001" iyz="0.0" izz="0.001"/>
+      </inertial>
+    </link>
+    		
+    						<!-- Joints-->
+    
+    <joint name="${namespace}/${name}_joint" type="fixed">
+      <origin xyz="${x} ${y} ${z}" rpy="${R} ${P} ${Y}" />
+      <parent link="${namespace}/base_link" />
+      <child link="${namespace}/${name}_link" />
+    </joint>
+    
+    
+        
+    					<!-- Gazebo -->
+    <gazebo> 
+      <sensor type="ray" name="${name}">
+        <alwaysOn>true</alwaysOn>
+	<updateRate>${update_rate}</updateRate>
+	<visualize>true</visualize>
+	<ray>
+	  <scan>
+	    <horizontal>
+	      <samples>10</samples>
+	      <resolution>1</resolution>
+	      <min_angle>-0.7</min_angle>
+	      <max_angle>0.7</max_angle>
+	    </horizontal>
+	  </scan>
+	  <range>
+	    <min>0.1</min> <!-- do not change (smaller values cause issues) -->
+	    <max>35</max>   <!-- do not change (bigger values cause issues) -->
+	    <resolution>0.01</resolution>
+	  </range>
+	</ray>
+	
+	<plugin name="radar_plugin_${name}" filename="libgazebo_radar_sensor_plugin.so">
+	  <gaussianNoise>0</gaussianNoise>	  
+	  <bodyName>${namespace}/${name}_link</bodyName>
+	  <frameId>${namespace}/${name}_link</frameId>
+          <topicName>radar</topicName>
+          
+	</plugin>
+      </sensor>
+    </gazebo>
+  </xacro:macro>
+</robot>
+
+
+ 
