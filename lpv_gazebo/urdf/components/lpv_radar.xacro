@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
   <xacro:macro name="lpv_radar" params="name:=radar x:=0.6 y:=0 z:=0.95
-				       R:=0 P:=0 Y:=pi update_rate:=10">
+				       R:=0 P:=0 Y:=0 update_rate:=10">
 				       
 				       <!-- Links-->
     <link name="${namespace}/${name}_link">

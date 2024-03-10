@@ -12,12 +12,12 @@
   <arg name="pinger_params" default="$(find aimm_gazebo)/config/pinger.yaml"/>
 
   <!-- Initial USV location and attitude-->
-  <arg name="x" default="-0" />
-  <arg name="y" default="0" />
+  <arg name="x" default="-540" />
+  <arg name="y" default="162" />
   <arg name="z" default="0.1" />
   <arg name="P" default="0" />
   <arg name="R" default="0" />
-  <arg name="Y" default="1" />
+  <arg name="Y" default="0" />
 
   <!-- Allow user specified thruster configurations
        H = stern trusters on each hull

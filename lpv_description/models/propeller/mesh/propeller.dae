@@ -11,7 +11,7 @@
   </asset>
   <library_images>
     <image id="WamV_png-image" name="WamV_png">
-      <init_from>../../WAM-V-Base/mesh/WamV.png</init_from>
+      <init_from>../../LP-V-Base/mesh/WamV.png</init_from>
     </image>
   </library_images>
   <library_materials>
