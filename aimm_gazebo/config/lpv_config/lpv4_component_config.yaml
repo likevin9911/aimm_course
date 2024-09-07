@@ -1,0 +1,55 @@
+lpv_camera:
+    - name: front_left_camera
+      visualize: True
+      x: 2
+      y: 0.4
+      z: 0.5
+      R: 0.0
+      P: ${radians(0)}
+      Y: ${radians(60)}
+      post_Y: ${radians(120)}
+    - name: front_right_camera
+      visualize: True
+      x: 2
+      y: -0.4
+      z: 0.5
+      R: 0.0
+      P: ${radians(0)}
+      Y: ${radians(-60)}
+      post_Y: ${radians(-120)}
+    - name: mid_rear_camera
+      visualize: True
+      x: -2
+      y: 0
+      z: 1
+      R: 0.0
+      P: ${radians(0)}
+      Y: ${radians(180)}
+      post_Y: ${radians(-120)}
+lpv_gps:
+    - name: gps_lpv
+      x: -0.2
+      y: 0.0
+      z: 0.35
+      R: 0.0
+      P: 0.0
+      Y: 0.0
+lpv_imu:
+    - name: imu_lpv
+      x: -0.2
+      y: 0
+      z: 0.35
+      R: 0.0
+      P: 0.0
+      Y: 0.0
+#lidar:
+#    - name: lidar_lpv
+#      type: 16_beam
+#      x: 0.7
+#      y: 0.0
+#      z: 1.8
+#      R: 0.0
+#      P: ${radians(8)}
+#      Y: 0.0
+#      post_Y: 0.0
+

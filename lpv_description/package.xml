@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>lpv_description</name>
+  <version>1.3.0</version>
+  <description>This package provides a URDF model of LPV-4</description>
+  <maintainer email="caguero@osrfoundation.org">Carlos Aguero</maintainer>
+  <maintainer email="kgli@mtu.edu">Kevin Li</maintainer>
+  <maintainer email="jriveroo@osrfoundation.org">Jose Luis Rivero</maintainer>
+  <maintainer email="kgli@mtu.edu">Kevin Li</maintainer>
+  <license>Apache 2.0</license>
+  <url type="website">http://wiki.ros.org/lpv_description</url>
+  <url type="bugtracker">http://github.com/osrf/aimm/issues</url>
+  <author email="briansbingham@gmail.com">Brian Bingham</author>
+  <author email="caguero@osrfoundation.org">Carlos Aguero</author>
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>xacro</depend>
+</package>

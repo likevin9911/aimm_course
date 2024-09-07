@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find lpv_description)/urdf/thrusters/engine.xacro" />
+  
+  <xacro:engine prefix="mid" position="-2 0 0.3" orientation="0.0 0.0 0"/>
+  <!--xacro:engine prefix="lateral" position="0.0 0.0 0.318237" orientation="0.0 0.0 1.5707"/-->
+  <gazebo>
+    <plugin name="lpv_gazebo_thrust" filename="libusv_gazebo_thrust_plugin.so">
+      <cmdTimeout>1.0</cmdTimeout>
+      <publisherRate>100.0</publisherRate>
+      <robotNamespace>${namespace}</robotNamespace>
+      <xacro:include filename="$(find lpv_gazebo)/urdf/thruster_layouts/lpv_gazebo_thruster_config.xacro" />
+
+      <xacro:lpv_gazebo_thruster_config name="mid" />
+      <!--xacro:lpv_gazebo_thruster_config name="lateral" /-->
+    </plugin>
+  </gazebo>
+</robot>

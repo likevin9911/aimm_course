@@ -1,0 +1,15 @@
+syntax: glob
+aimm_gazebo/models/dock_2016*/model.sdf
+aimm_gazebo/models/dock_2018*/model.sdf
+aimm_gazebo/models/dock_2022*/model.sdf
+aimm_gazebo/models/robotx_2018_qualifying_avoid_obstacles_buoys/model.sdf
+wave_gazebo/world_models/ocean_waves/model.sdf
+aimm_gazebo/src/aimm_gazebo_python/generator_scripts/lpv_config/*.xacro
+build
+build_*
+.DS_Store
+*.swp
+*.orig
+*.*~
+aimm_gazebo/models/dock_permutations/*
+*.pyc

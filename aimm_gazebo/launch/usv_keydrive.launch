@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+  <!-- Arguments -->
+  <arg name="max_angle" default="$(eval pi/2)"/>
+  <arg name="thrust_config" default="Z"/>
+
+  <!-- Keyboard teleop node -->
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen">
+  </node>
+
+  <!-- Z-Drive system (single mid-thruster) -->
+  <group if="$(eval arg('thrust_config') == 'Z')">
+    <!-- Set articulation angles for mid-thruster (yaw control) -->
+    <node pkg="aimm_gazebo" type="key2thrust_angle.py" name="key2thrust_angle" output="screen">
+      <param name="max_angle" value="$(arg max_angle)"/>
+      <remap from="mid_thrust_angle" to="/thrusters/mid_thrust_angle"/>
+    </node>
+
+    <!-- Convert Twist messages (from keyboard teleop) to Drive messages for mid-thruster (linear control) -->
+    <node pkg="aimm_gazebo" type="twist2thrust.py" name="twist2thrust" output="screen" args="--keyboard">
+      <remap from="mid_cmd" to="/thrusters/mid_thrust_cmd"/>
+    </node>
+  </group>
+  
+</launch>
+

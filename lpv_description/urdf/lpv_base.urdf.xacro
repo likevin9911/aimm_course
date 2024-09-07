@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro" name="LPV-4">
+  <xacro:arg name="namespace" default="lpv"/>  
+  <xacro:property name="namespace" value="$(arg namespace)" scope="global" /> 
+  
+  <!-- base link -->
+  <link name="${namespace}/base_link">
+  </link>
+
+  <joint name="${namespace}/dummy_joint" type = "fixed">
+    <parent link="${namespace}/base_link"/>
+    <child link="${namespace}/dummy_link"/>
+  </joint>
+
+  <link name="${namespace}/dummy_link">
+    <visual>
+      <origin xyz="0 0 -0.5" rpy="0 0 3.14" />
+      <geometry>
+        <mesh filename="package://lpv_description/models/aimm-base/mesh/AIMMBoat.dae" scale="0.03 0.03 0.03"/> 
+      </geometry>
+    </visual>
+        
+    <collision name="main_float">
+      <origin xyz="0 0 0.15" rpy="0 0 0" />
+      <geometry>
+        <box size="4.1 1.2 0.5"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="180.0"/>
+      <inertia ixx="120.0" ixy="0.0" ixz="0.0" iyy="393" iyz="0.0" izz="446.0"/>
+    </inertial>
+  </link>
+
+  
+</robot>
