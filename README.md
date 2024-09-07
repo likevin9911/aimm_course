@@ -33,7 +33,6 @@ sudo apt install ${GAZ} lib${GAZ}-dev ros-${DIST}-gazebo-plugins ros-${DIST}-gaz
 ```
 
 ## Instructions to Setup
-"Apologies for the round about way of setting this up"
 1. Create a new workspace:
 ```
 mkdir -p ~/aimm_ws/src
